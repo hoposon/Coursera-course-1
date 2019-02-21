@@ -1,24 +1,21 @@
 {
-  "name": "coursera-course-1",
+  "name": "confusion",
   "version": "1.0.0",
-  "description": "This is a test directory to learn git and node",
+  "description": "This is a website for Ristorante Con Fusion",
   "main": "index.html",
   "scripts": {
-	"start": "npm run lite",
-	"test": "echo \"Error: no test specified\" && exit 1",
-	"lite": "lite-server"
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hoposon/Coursera-course-1.git"
-  },
-  "author": "Lukas Houf",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hoposon/Coursera-course-1/issues"
-  },
-  "homepage": "https://github.com/hoposon/Coursera-course-1#readme",
   "devDependencies": {
-    "lite-server": "^2.4.0"
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
   }
 }
