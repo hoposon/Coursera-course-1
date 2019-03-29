@@ -28,7 +28,10 @@
 					<li class="nav-item"><a class="nav-link" href="/contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
 				</ul>
 				<span class="navbar-text">
-					<a data-toggle="modal" data-target="#loginModal">
+					<!-- <a data-toggle="modal" data-target="#loginModal">
+						<span class="fa fa-sign-in"></span>Login
+					</a> -->
+					<a href="#" id="loginButton">
 						<span class="fa fa-sign-in"></span>Login
 					</a>
 				</span>
@@ -42,7 +45,7 @@
 				<div class="modal-header">
 					<h3 class="modal-title">Reserve a table</h3>
 					<button type="button" class="close" data-dismiss="modal">
-						&times;
+						<span>&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
@@ -102,8 +105,8 @@
 						</div>
 						<div class="form-group row pt-3">
 							<div class="col-sm-8 offset-sm-4 pl-0">
-								<input type="button" class="btn btn-secondary col-3 col-sm-2 ml-3 ml-sm-0" value="Cancel" data-dismiss="modal">
-								<input type="submit" class="btn btn-primary col-3 ml-1 col-sm-2" value="Reserve">
+								<input type="button" class="btn btn-secondary col-3 col-sm-3 ml-3 ml-sm-0" value="Cancel" data-dismiss="modal">
+								<input type="submit" class="btn btn-primary col-3 ml-1 col-sm-3" value="Reserve">
 							</div>
 						</div>			
 					</form>
@@ -118,7 +121,7 @@
 				<div class="modal-header">
 					<h4 class="modal-title">Login</h4>
 					<button type="button" class="close" data-dismiss="modal">
-						&times;
+						<span>&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
@@ -161,9 +164,7 @@
 					<img src="img/logo.png" class="img-fluid">
                 </div>
 				<div class="col-12 col-sm-3 d-flex align-self-center">
-					<a class="btn btn-warning btn-block" 
-						data-toggle="modal" data-target="#reservationModal"
-						href="/index.html#reservation">Reserve table</a>
+					<a id="reservationButton" class="btn btn-warning btn-block" href="#">Reserve table</a>
                 </div>
             </div>
         </div>
@@ -337,6 +338,14 @@
 				}
 				$('#carouselButton span').toggleClass('fa-play');
 				$('#carouselButton span').toggleClass('fa-pause');
+			});
+
+			$('#loginButton').click(function() {
+				$('#loginModal').modal('show');
+			});
+
+			$('#reservationButton').click(function() {
+				$('#reservationModal').modal('show');
 			});
 		})
 	</script>

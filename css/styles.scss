@@ -74,3 +74,20 @@ body{
     bottom: 0px;
 }
 
+.modal-header {
+	color: floralwhite;
+	background-color: $background-dark;
+}
+
+.modal-body {
+	background-color: $background-pale;
+}
+
+.close {
+	span {
+		color: rgb(219, 219, 219);
+	}	
+	&:hover {
+		color: white;
+	}
+}
