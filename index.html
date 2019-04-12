@@ -329,7 +329,10 @@
 	<script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
 	<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<!-- endbuild -->
-	<!-- build:js js/main.js -->
+	
+	<!-- use "build:js js/main.js" for grunt to separate /js/scripts.js. Gulp needs "build:js1" different "build:" name for different files -->
+
+	<!-- build:js1 js/main.js -->
 	<script src="/js/scripts.js"></script>
 	<!-- endbuild -->
 </body>
